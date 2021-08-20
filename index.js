@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 
 const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES']})
 
-var prefix = '!'
+var prefix = '!' // Not important
 
 client.on('ready', () => {
 	client.user.setActivity({name:"2021", type:"PLAYING"})
