@@ -3,14 +3,12 @@ const Discord = require('discord.js')
 
 const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES']})
 
-var prefix = '!' // Not important
-
 client.on('ready', () => {
 	client.user.setActivity({name:"2021", type:"PLAYING"})
 })
 
 client.on('messageCreate', (message) => {
-	if (message.content == `${prefix}embed`){
+	if (message.content == `embed`){
 		const Embed = new Discord.MessageEmbed()
 		.setColor("FFFFFF")
 		.setTitle("Example")
